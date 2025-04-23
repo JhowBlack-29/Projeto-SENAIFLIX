@@ -70,7 +70,7 @@ button, input, select {
     font-size: 1.5em;
 }
 
-.card-conteiner {
+.card-container {
     width: 100%;
     height: auto;
     margin-top: 10px;
@@ -87,6 +87,10 @@ button, input, select {
     background-size: cover;
     margin-right: 10px;
     border-radius: 7px;
+}
+
+.menu-mobile {
+    display: none;
 }
 
 /*responsividade*/
@@ -119,7 +123,7 @@ button, input, select {
         gap: 15px;
     }
 
-    .card-conteiner {
+    .card-container {
         align-items: center;
         justify-content: center;
         flex-wrap: wrap;
@@ -131,6 +135,23 @@ button, input, select {
         width: 40%;
         height: auto;
         aspect-ratio: 2 / 3;
+    }
+
+    .menu-mobile {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 10px;
+        background: #111;
+        padding: 15px;
+        border-radius: 5px;
+    }
+    
+    .menu-mobile a {
+        color: white;
+        text-decoration: none;
+        margin: 10px 0;
     }
 }
 
